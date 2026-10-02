@@ -448,8 +448,8 @@ html[dir="rtl"] .manif .eyebrow{letter-spacing:0}
 @media (max-width:1024px){.gd-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:620px){.gd-grid{grid-template-columns:1fr}.gd-count{margin-inline-start:0}}
 .gd-item{display:flex;flex-direction:column;padding:0;border-radius:var(--r-md);background:var(--card);overflow:hidden}
-.gd-img{width:100%;height:124px;object-fit:cover;display:block}
-.gd-body{display:flex;flex-direction:column;flex:1;padding:16px 20px 20px}
+.gd-img{width:100%;height:124px;object-fit:cover;display:block;position:relative;z-index:0}
+.gd-body{display:flex;flex-direction:column;flex:1;padding:16px 20px 20px;position:relative;z-index:1;background:var(--card)}
 .gd-top{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
 .gd-item h3{font-size:1.06rem;font-weight:600}
 .gd-tag{font-size:.7rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-3);white-space:nowrap}
