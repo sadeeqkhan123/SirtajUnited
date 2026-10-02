@@ -94,39 +94,45 @@ function buildCal(){
   c.innerHTML=h;
 }
 
-/* grain directory (Food items page) */
-const GRAINS=window.GRAINS||[];
-const gdGrid=$("#gdGrid"),gdSearch=$("#gdSearch"),gdFilters=$("#gdFilters"),gdCount=$("#gdCount"),gdEmpty=$("#gdEmpty");
-let gdCat="all";
+/* product catalog directories: grains on the Food page, everything on All products */
+const CATALOG=window.CATALOG||[];
 const fmtNum=n=>new Intl.NumberFormat(LANGS[LANG].tag).format(n);
 /* strip zero-width joiners and Arabic diacritics so a search matches loosely typed names */
 const gdNorm=s=>(s||"").toLowerCase().replace(/[‌ً-ٰٟ]/g,"");
-function buildGrains(){
-  if(!gdGrid)return;
-  const q=gdNorm(gdSearch.value.trim()),sec=LANG==="en"?"fa":"en";
-  let shown=0,h="";
-  GRAINS.forEach(g=>{
-    if(gdCat!=="all"&&g.cat!==gdCat)return;
-    if(q&&!["en","fa","ps"].some(l=>gdNorm(g.name[l]).includes(q))&&!gdNorm(g.note[LANG]).includes(q))return;
-    shown++;
-    const msg=[TT("msg.greet"),TT("msg.ask"),"",TT("f.product")+": "+g.name[LANG],TT("f.qty")+": ",TT("f.province")+": ","",TT("msg.thanks")].join("\n");
-    h+='<li class="gd-item"><div class="gd-top"><h3>'+g.name[LANG]+'</h3><span class="gd-tag">'+TT("gd."+g.cat)+'</span></div>'
-      +'<span class="gd-local" lang="'+(sec==="fa"?"fa":"en")+'">'+g.name[sec]+'</span>'
-      +'<p>'+g.note[LANG]+'</p>'
-      +'<a class="gd-quote" href="'+waURL(msg)+'" target="_blank" rel="noopener"><svg class="i fill"><use href="#ic-wa"/></svg><span>'+TT("cm.quotewa")+'</span></a></li>';
-  });
-  gdGrid.innerHTML=h;
-  gdEmpty.hidden=shown>0;
-  gdCount.textContent=TT("gd.count").replace("{n}",fmtNum(shown)).replace("{m}",fmtNum(GRAINS.length));
-}
-if(gdGrid){
-  gdSearch.addEventListener("input",buildGrains);
-  $$("button",gdFilters).forEach(b=>b.addEventListener("click",()=>{
-    gdCat=b.dataset.cat;
-    $$("button",gdFilters).forEach(x=>x.setAttribute("aria-pressed",String(x===b)));
-    buildGrains();
+const gdDirs=$$(".gd");
+gdDirs.forEach(root=>{
+  const q=$(".gd-q",root),grid=$(".gd-grid",root),count=$(".gd-count",root),empty=$(".gd-empty",root),btns=$$(".gd-filters button",root);
+  const cats=(root.dataset.cats||"").split(",");
+  const items=CATALOG.filter(g=>cats.includes(g.cat));
+  let cur="all";
+  function build(){
+    const nq=gdNorm(q.value.trim()),sec=LANG==="en"?"fa":"en";
+    let shown=0,h="";
+    items.forEach(g=>{
+      if(cur!=="all"&&g.cat!==cur)return;
+      if(nq&&!["en","fa","ps"].some(l=>gdNorm(g.name[l]).includes(nq))&&!gdNorm(g.note[LANG]).includes(nq))return;
+      shown++;
+      const msg=[TT("msg.greet"),TT("msg.ask"),"",TT("f.product")+": "+g.name[LANG],TT("f.qty")+": ",TT("f.province")+": ","",TT("msg.thanks")].join("\n");
+      const st=[];if(g.pos)st.push("object-position:"+g.pos);if(g.tf)st.push(g.tf);
+      h+='<li class="gd-item"><img class="gd-img" src="assets/img/catalog/'+g.img+'.jpg" alt="'+g.name.en+'" loading="lazy"'+(st.length?' style="'+st.join(";")+'"':'')+'>'
+        +'<div class="gd-body"><div class="gd-top"><h3>'+g.name[LANG]+'</h3><span class="gd-tag">'+TT("gd."+g.cat)+'</span></div>'
+        +'<span class="gd-local" lang="'+(sec==="fa"?"fa":"en")+'">'+g.name[sec]+'</span>'
+        +'<p>'+g.note[LANG]+'</p>'
+        +'<a class="btn btn-wa btn-sm gd-quote" href="'+waURL(msg)+'" target="_blank" rel="noopener"><svg class="i fill"><use href="#ic-wa"/></svg><span>'+TT("cm.quotewa")+'</span></a></div></li>';
+    });
+    grid.innerHTML=h;
+    empty.hidden=shown>0;
+    count.textContent=TT("gd.count").replace("{n}",fmtNum(shown)).replace("{m}",fmtNum(items.length));
+  }
+  q.addEventListener("input",build);
+  btns.forEach(b=>b.addEventListener("click",()=>{
+    cur=b.dataset.cat;
+    btns.forEach(x=>x.setAttribute("aria-pressed",String(x===b)));
+    build();
   }));
-}
+  root._build=build;
+});
+function buildGrains(){gdDirs.forEach(r=>r._build());}
 
 /* manifesto stats: count up on first reveal */
 const counts=$$("[data-count]");

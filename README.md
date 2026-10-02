@@ -98,10 +98,31 @@ Product photos in `assets/img/products/` are free-license images from Wikimedia 
 
 | File | Source | License |
 |---|---|---|
-| `dap.jpg` | "DAP (Diammonium Phosphate) Granules (1)" by Suyash Dwivedi, Wikimedia Commons | CC BY-SA 4.0 |
-| `urea.jpg` | "Sample of Urea" by LHcheM, Wikimedia Commons | CC BY-SA 3.0 |
-| `grain.jpg` | Wheat grains close-up, WordPress photo directory (pd.w.org) | CC0 |
-| `truck.jpg` | "Forward Operation Base Pasab provides fertilizer to Afghans" by Spc. Jason Nolte, U.S. Army, via Wikimedia Commons | Public domain |
+| `products/dap.jpg`, `catalog/dap.jpg` | "DAP (Diammonium Phosphate) Granules (1)" by Suyash Dwivedi, Wikimedia Commons | CC BY-SA 4.0 |
+| `products/urea.jpg`, `catalog/urea.jpg` | "Sample of Urea" by LHcheM, Wikimedia Commons | CC BY-SA 3.0 |
+| `products/grain.jpg`, `catalog/wheat.jpg` | Wheat grains close-up, WordPress photo directory (pd.w.org) | CC0 |
+| `products/truck.jpg` | "Forward Operation Base Pasab provides fertilizer to Afghans" by Spc. Jason Nolte, U.S. Army, via Wikimedia Commons | Public domain |
+| `catalog/rice.jpg` | "Mushqbudji rice grains close-up" by Zahoor Ahmad Reshi, Wikimedia Commons | CC0 |
+| `catalog/barley.jpg` | "Barley grains" by 국립국어원 (National Institute of Korean Language), Wikimedia Commons | CC BY-SA 2.0 KR |
+| `catalog/maize.jpg` | "Dried corn kernels", rawpixel | CC0 |
+| `catalog/millet.jpg` | "Grain millet, early grain fill, Tifton" (USDA), Wikimedia Commons | Public domain |
+| `catalog/sorghum.jpg` | "Milo" by C. K. Hartman, Flickr | CC BY 2.0 |
+| `catalog/oats.jpg` | "Oat grains" by François Nguyen, Wikimedia Commons | CC BY 2.0 |
+| `catalog/rye.jpg` | "LPCC-561-Grans de Secale cereale L." by Miquel Pujol Palol, Wikimedia Commons | CC BY-SA 3.0 |
+| `catalog/chickpea.jpg` | "Chickpea" (desi/kabuli comparison), Wikimedia Commons | Public domain |
+| `catalog/lentil.jpg` | "Red lentils (1)", Wikimedia Commons | CC0 |
+| `catalog/mung.jpg` | "Mung beans" by 維基小霸王, Wikimedia Commons | CC BY-SA 4.0 |
+| `catalog/kidney.jpg` | "Dry red kidney beans", rawpixel | CC0 |
+| `catalog/pea.jpg` | "Pea protein milk with yellow split peas", Wikimedia Commons | CC0 |
+| `catalog/broadbean.jpg` | "Fava Beans Dried", Wikimedia Commons | CC0 |
+| `catalog/soybean.jpg` | "Whole Soybeans" by United Soybean Board, Flickr | CC BY 2.0 |
+| `catalog/sesame.jpg` | "Toasted sesame seeds 1", Wikimedia Commons | CC0 |
+| `catalog/flax.jpg` | "Brown Flax Seeds" by Sanjay Acharya, Wikimedia Commons | CC BY-SA 3.0 |
+| `catalog/sunflower.jpg` | "Guazi (sunflower seeds)", Wikimedia Commons | CC0 |
+| `catalog/flour.jpg` | "Close flour baking image", rawpixel | CC0 |
+| `catalog/oil.jpg` | "Sunflower oil" by Tiia Monto, Wikimedia Commons | CC BY-SA 4.0 |
+| `catalog/sugar.jpg` | "White sugar background", rawpixel | CC0 |
+| `catalog/salt.jpg` | "Salt-crystals", Wikimedia Commons | CC0 |
 
 ## Deploy
 

@@ -96,10 +96,10 @@
       <div class="dd" id="ddProducts">
         <button type="button" aria-expanded="false" aria-haspopup="true"><span data-i18n="nav.products">Products</span><svg class="i"><use href="#ic-down"/></svg></button>
         <div class="dd-menu glass" role="menu">
-          <a href="#/products" data-route-link="/products" role="menuitem"><span class="dd-dot" style="background:#2A2CB4"></span><span><b data-i18n="nav.all">All products</b><small data-i18n="nav.all.s">Fertilizers and food commodities</small></span></a>
-          <a href="#/products/dap" data-route-link="/products/dap" role="menuitem"><span class="dd-dot gr-dap"></span><span><b data-i18n="nav.dap">DAP fertilizer</b><small>18-46-0</small></span></a>
-          <a href="#/products/urea" data-route-link="/products/urea" role="menuitem"><span class="dd-dot gr-urea" style="border:1px solid var(--line-2)"></span><span><b data-i18n="nav.urea">Urea fertilizer</b><small data-i18n="nav.urea.s">46% nitrogen</small></span></a>
-          <a href="#/products/food" data-route-link="/products/food" role="menuitem"><span class="dd-dot gr-food"></span><span><b data-i18n="nav.food">Food items</b><small data-i18n="nav.food.s">Flour, rice, oil, grains, baskets</small></span></a>
+          <a href="#/products" data-route-link="/products" role="menuitem"><img class="dd-dot" src="assets/img/products/truck.jpg" alt="" width="36" height="36" loading="lazy"><span><b data-i18n="nav.all">All products</b><small data-i18n="nav.all.s">Fertilizers and food commodities</small></span></a>
+          <a href="#/products/dap" data-route-link="/products/dap" role="menuitem"><img class="dd-dot" src="assets/img/products/dap.jpg" alt="" width="36" height="36" loading="lazy"><span><b data-i18n="nav.dap">DAP fertilizer</b><small>18-46-0</small></span></a>
+          <a href="#/products/urea" data-route-link="/products/urea" role="menuitem"><img class="dd-dot" src="assets/img/products/urea.jpg" alt="" width="36" height="36" loading="lazy" style="object-position:center 68%"><span><b data-i18n="nav.urea">Urea fertilizer</b><small data-i18n="nav.urea.s">46% nitrogen</small></span></a>
+          <a href="#/products/food" data-route-link="/products/food" role="menuitem"><img class="dd-dot" src="assets/img/products/grain.jpg" alt="" width="36" height="36" loading="lazy"><span><b data-i18n="nav.food">Food items</b><small data-i18n="nav.food.s">Flour, rice, oil, grains, baskets</small></span></a>
         </div>
       </div>
       <a href="#/ngos" data-route-link="/ngos" data-i18n="nav.ngos">For NGOs</a>
@@ -156,9 +156,9 @@
           <a class="btn btn-glass btn-lg" href="#/quote"><svg class="i"><use href="#ic-doc"/></svg><span data-i18n="h.cta2">Build your request</span></a>
         </div>
         <ul class="hero-pills">
-          <li class="hpill"><span class="gr gr-dap"></span><span>DAP<small>18-46-0</small></span></li>
-          <li class="hpill"><span class="gr gr-urea"></span><span data-i18n="h.p2">Urea<small>46% nitrogen</small></span></li>
-          <li class="hpill"><span class="gr gr-food"></span><span data-i18n="h.p3">Food items<small>Flour, rice, oil</small></span></li>
+          <li class="hpill"><img class="gr" src="assets/img/products/dap.jpg" alt="" width="28" height="28" loading="lazy"><span>DAP<small>18-46-0</small></span></li>
+          <li class="hpill"><img class="gr" src="assets/img/products/urea.jpg" alt="" width="28" height="28" loading="lazy" style="object-position:center 68%"><span data-i18n="h.p2">Urea<small>46% nitrogen</small></span></li>
+          <li class="hpill"><img class="gr" src="assets/img/products/grain.jpg" alt="" width="28" height="28" loading="lazy"><span data-i18n="h.p3">Food items<small>Flour, rice, oil</small></span></li>
         </ul>
       </div>
       <div class="globe-wrap" id="globeWrap">
@@ -311,7 +311,7 @@
         <div class="m-stats">
           <div class="m-stat rv" style="--i:0"><b data-count="34">34</b><span data-i18n="m.s1">provinces quoted for delivery</span></div>
           <div class="m-stat rv" style="--i:1"><b data-count="7">7</b><span data-i18n="m.s2">border crossings we route through</span></div>
-          <div class="m-stat rv" style="--i:2"><b data-count="18">18</b><span data-i18n="m.s3">grains and staples in our directory</span></div>
+          <div class="m-stat rv" style="--i:2"><b data-count="24">24</b><span data-i18n="m.s3">products in our catalog</span></div>
           <div class="m-stat rv" style="--i:3"><b data-count="3">3</b><span data-i18n="m.s4">working languages</span></div>
         </div>
       </div>
@@ -382,6 +382,27 @@
           <div class="pc-body"><h3 data-i18n="nav.food">Food items</h3><p class="pc-sub" data-i18n="p.food.sub">Staples and household food baskets</p><p data-i18n="p.food.d">Staple commodities in bulk, or packed into household food baskets to your bill of quantities.</p>
             <div class="pc-act"><a class="btn btn-wa btn-sm" data-wa="food" href="https://wa.me/93711666664" target="_blank" rel="noopener"><svg class="i fill"><use href="#ic-wa"/></svg><span data-i18n="cm.quotewa">Get quote</span></a><a class="btn btn-glass btn-sm" href="#/products/food" data-i18n="cm.details">Full details</a></div></div>
         </article>
+      </div>
+    </div>
+  </section>
+  <section class="sec tight">
+    <div class="wrap">
+      <div class="sh"><span class="bar"></span><h2 data-i18n="gd.all.t">The full catalog.</h2><p data-i18n="gd.all.p">Every product we quote — fertilizers, staples and grains. Search or filter, then ask for a price on WhatsApp.</p></div>
+      <div class="gd" data-cats="fert,staple,cereal,pulse,oilseed">
+        <div class="gd-bar rv">
+          <label class="gd-search"><span class="sr" data-i18n="gd.search">Search grains</span><svg class="i"><use href="#ic-search"/></svg><input class="gd-q" type="search" autocomplete="off" data-i18n-attr="placeholder:gd.ph" placeholder="Search wheat, rice, mung…"></label>
+          <div class="gd-filters" role="group" aria-label="Filter by category">
+            <button type="button" data-cat="all" aria-pressed="true" data-i18n="gd.all">All</button>
+            <button type="button" data-cat="fert" aria-pressed="false" data-i18n="gd.fert">Fertilizers</button>
+            <button type="button" data-cat="staple" aria-pressed="false" data-i18n="gd.staple">Staples</button>
+            <button type="button" data-cat="cereal" aria-pressed="false" data-i18n="gd.cereal">Cereals</button>
+            <button type="button" data-cat="pulse" aria-pressed="false" data-i18n="gd.pulse">Pulses</button>
+            <button type="button" data-cat="oilseed" aria-pressed="false" data-i18n="gd.oilseed">Oilseeds</button>
+          </div>
+          <span class="gd-count" aria-live="polite"></span>
+        </div>
+        <ul class="gd-grid"></ul>
+        <p class="gd-empty" hidden data-i18n="gd.empty">Nothing matches your search. Send us the name anyway — if it is traded in Afghanistan, we will source it.</p>
       </div>
     </div>
   </section>
@@ -545,18 +566,20 @@
   <section class="sec tight">
     <div class="wrap">
       <div class="sh"><span class="bar"></span><h2 data-i18n="gd.t">Every grain in Afghanistan.</h2><p data-i18n="gd.p">From wheat and barley to mung beans and sesame — the cereals, pulses and oilseeds traded across the country. Search the directory and ask for a quotation on any of them.</p></div>
-      <div class="gd-bar rv">
-        <label class="gd-search"><span class="sr" data-i18n="gd.search">Search grains</span><svg class="i"><use href="#ic-search"/></svg><input id="gdSearch" type="search" autocomplete="off" data-i18n-attr="placeholder:gd.ph" placeholder="Search wheat, rice, mung…"></label>
-        <div class="gd-filters" id="gdFilters" role="group" aria-label="Filter by category">
-          <button type="button" data-cat="all" aria-pressed="true" data-i18n="gd.all">All</button>
-          <button type="button" data-cat="cereal" aria-pressed="false" data-i18n="gd.cereal">Cereals</button>
-          <button type="button" data-cat="pulse" aria-pressed="false" data-i18n="gd.pulse">Pulses</button>
-          <button type="button" data-cat="oilseed" aria-pressed="false" data-i18n="gd.oilseed">Oilseeds</button>
+      <div class="gd" data-cats="cereal,pulse,oilseed">
+        <div class="gd-bar rv">
+          <label class="gd-search"><span class="sr" data-i18n="gd.search">Search grains</span><svg class="i"><use href="#ic-search"/></svg><input class="gd-q" type="search" autocomplete="off" data-i18n-attr="placeholder:gd.ph" placeholder="Search wheat, rice, mung…"></label>
+          <div class="gd-filters" role="group" aria-label="Filter by category">
+            <button type="button" data-cat="all" aria-pressed="true" data-i18n="gd.all">All</button>
+            <button type="button" data-cat="cereal" aria-pressed="false" data-i18n="gd.cereal">Cereals</button>
+            <button type="button" data-cat="pulse" aria-pressed="false" data-i18n="gd.pulse">Pulses</button>
+            <button type="button" data-cat="oilseed" aria-pressed="false" data-i18n="gd.oilseed">Oilseeds</button>
+          </div>
+          <span class="gd-count" aria-live="polite"></span>
         </div>
-        <span class="gd-count" id="gdCount" aria-live="polite"></span>
+        <ul class="gd-grid"></ul>
+        <p class="gd-empty" hidden data-i18n="gd.empty">Nothing matches your search. Send us the name anyway — if it is traded in Afghanistan, we will source it.</p>
       </div>
-      <ul class="gd-grid" id="gdGrid"></ul>
-      <p class="gd-empty" id="gdEmpty" hidden data-i18n="gd.empty">Nothing matches your search. Send us the name anyway — if it is traded in Afghanistan, we will source it.</p>
       <p class="note" data-i18n="gd.note">Every grain is quoted with origin, packing, specification and delivery period, like our core lines.</p>
     </div>
   </section>
@@ -861,7 +884,7 @@
       <li><a href="mailto:ceo@sartajunited.com">ceo@sartajunited.com</a></li>
       <li><a href="#/contact" data-i18n="c.addr">Gulbahar Market, Chindawol, District 1, Kabul, Afghanistan</a></li></ul></div>
   </div>
-  <div class="wrap foot-bottom"><span>© <span id="yr">2026</span> Sartaj United Trading Company</span><span class="ltr">Photos: S. Dwivedi, LHcheM (CC BY-SA), U.S. Army</span><span data-i18n="cm.kabul">Kabul, Afghanistan</span></div>
+  <div class="wrap foot-bottom"><span>© <span id="yr">2026</span> Sartaj United Trading Company</span><span class="ltr" style="max-width:60ch">Photos: S. Dwivedi, LHcheM, T. Monto, M. Pujol Palol, 국립국어원, 維基小霸王, S. Acharya (CC BY-SA); F. Nguyen, C. K. Hartman, United Soybean Board (CC BY); U.S. Army; CC0 contributors</span><span data-i18n="cm.kabul">Kabul, Afghanistan</span></div>
 </footer>
 
 <div class="fab" id="fab">
