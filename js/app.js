@@ -208,13 +208,6 @@ function onScroll(){
 }
 addEventListener("scroll",onScroll,{passive:true});
 
-/* theme */
-const root=document.documentElement,mq=matchMedia("(prefers-color-scheme: dark)");
-const saved=store.get("sutc-theme");if(saved)root.dataset.theme=saved;
-$$("[data-theme-toggle]").forEach(b=>b.addEventListener("click",()=>{
-  const dark=root.dataset.theme?root.dataset.theme==="dark":mq.matches;root.dataset.theme=dark?"light":"dark";store.set("sutc-theme",root.dataset.theme);
-}));
-
 /* floating WhatsApp */
 const fabBtn=$("#fabBtn"),fabPop=$("#fabPop");
 function setFab(open){fabPop.setAttribute("aria-hidden",String(!open));fabBtn.setAttribute("aria-expanded",String(open));}

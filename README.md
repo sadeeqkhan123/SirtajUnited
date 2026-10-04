@@ -86,11 +86,12 @@ To add a page:
 
 ### Design system
 
-- Colours, glass effects and shadows are CSS variables on `:root` in `css/style.css`. The dark theme overrides them in the same file.
-- The dark theme follows the device setting, and visitors can switch with the moon or sun button (saved as `sutc-theme`).
-- Fonts are Plus Jakarta Sans (English), Vazirmatn (Dari) and Noto Sans Arabic (Pashto and the logo name), from Google Fonts.
+- Light theme only. Colours and shadows are CSS variables on `:root` in `css/style.css`.
+- Brand red `#D2382B` is sampled from the company logo (`--brand`); feature panels (hero, manifesto, CTA, footer) use charcoal `#161518` (`--panel`).
+- Logo files: `assets/img/logo-red.png` (header, about), `assets/img/logo-white.png` (footer), `assets/img/favicon.png` — all generated from the red master logo with a transparent background.
+- Fonts are Space Grotesk (headings), Archivo (text), Vazirmatn (Dari) and Noto Sans Arabic (Pashto and the logo name), from Google Fonts.
 - The company name from the logo, `شرکة تجارتی سرتاج یونائیٹڈ`, uses the `.motto` class.
-- Scroll animations: add `class="rv"` to an element and `style="--i:2"` to stagger it. Cards (`.card`) get the hover lift, cursor light and gradient edge automatically.
+- Scroll animations: add `class="rv"` to an element and `style="--i:2"` to stagger it.
 
 ## Image credits
 
