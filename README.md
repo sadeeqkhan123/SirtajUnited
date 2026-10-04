@@ -87,7 +87,7 @@ To add a page:
 ### Design system
 
 - Light theme only. Colours and shadows are CSS variables on `:root` in `css/style.css`.
-- One continuous warm ivory canvas (`--bg:#F2F0EA`) with ink text and warm hairline borders — no dark panels. Brand red `#D2382B` is sampled from the company logo (`--brand`) and is the only accent; the CTA band and the NGO hero panel are the only solid-red blocks (`--panel`).
+- One continuous warm ivory canvas (`--bg:#F2F0EA`) with ink text and warm hairline borders — no dark panels and no red in the UI (the red lives only in the logo). Buttons and accents are ink/near-black; WhatsApp buttons use WhatsApp green (`--wa`). The home page is built from editorial rail sections (`.ed`): a left label rail with a small pill button, content on the right, hairline rules between sections. The hero globe renders as a realistic Earth (blue ocean, green land, gold Afghanistan).
 - Logo files: `assets/img/logo-red.png` (header, about), `assets/img/logo-white.png` (footer), `assets/img/favicon.png` — all generated from the red master logo with a transparent background.
 - Fonts are Space Grotesk (headings), Archivo (text), Vazirmatn (Dari) and Noto Sans Arabic (Pashto and the logo name), from Google Fonts.
 - The company name from the logo, `شرکة تجارتی سرتاج یونائیٹڈ`, uses the `.motto` class.
