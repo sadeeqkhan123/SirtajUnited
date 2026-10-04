@@ -481,3 +481,8 @@ html[dir="rtl"] .ed-rail .lbl{letter-spacing:.02em}
 
 /* NGO hero card: compact content card, not a bottom-anchored art panel */
 .phero-art.art-brand{min-height:0;justify-content:flex-start;align-self:center}
+
+/* product detail photo gallery */
+.pgal{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.pgal img{width:100%;height:260px;object-fit:cover;border-radius:var(--r-md);border:1px solid var(--line);display:block;background:#fff}
+@media (max-width:560px){.pgal{grid-template-columns:1fr}.pgal img{height:220px}}
