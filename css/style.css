@@ -335,9 +335,14 @@ html[dir="rtl"] .globe-hint{transform:translateX(50%)}
 .fld{grid-column:span 3;display:grid;gap:7px}
 .fld.w2{grid-column:span 2}.fld.full{grid-column:1/-1}
 @media (max-width:620px){.fld,.fld.w2{grid-column:1/-1}}
-.fld label{font-weight:600;font-size:.9rem}
+.fld label{font-weight:600;font-size:.9rem;display:flex;align-items:baseline;gap:6px;min-height:1.45em;white-space:nowrap;overflow:hidden}
 .fld label small{font-weight:400;color:var(--ink-3)}
-.fld input,.fld select,.fld textarea{width:100%;height:48px;padding:0 14px;border-radius:12px;border:1px solid var(--line-2);background:var(--field);color:var(--ink);font:inherit;font-size:1rem;transition:border-color .2s,box-shadow .2s}
+.fld input,.fld select,.fld textarea{width:100%;min-width:0;height:48px;padding:0 14px;border-radius:12px;border:1px solid var(--line-2);background:var(--field);color:var(--ink);font:inherit;font-size:1rem;transition:border-color .2s,box-shadow .2s}
+/* custom select chrome so dropdowns align with inputs on every OS */
+.fld select{-webkit-appearance:none;appearance:none;padding-inline-end:40px;background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23191917' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;background-size:16px;text-overflow:ellipsis}
+html[dir="rtl"] .fld select{background-position:left 14px center}
+.fld input[type="date"]{direction:ltr}
+html[dir="rtl"] .fld input[type="date"]{text-align:right}
 .fld textarea{height:auto;min-height:104px;padding:12px 14px;resize:vertical}
 .fld input:focus,.fld select:focus,.fld textarea:focus{outline:none;border-color:var(--brand);box-shadow:0 0 0 4px rgba(210,56,43,.16)}
 .fld [aria-invalid="true"]{border-color:var(--err);box-shadow:0 0 0 4px rgba(198,32,21,.14)}
@@ -473,3 +478,6 @@ html[dir="rtl"] .ed-rail .lbl{letter-spacing:.02em}
 .stat-chips li{display:inline-flex;align-items:baseline;gap:8px;padding:9px 16px;border:1px solid var(--line-2);border-radius:980px;background:var(--card);font-size:.86rem;color:var(--ink-2);line-height:1.4}
 .stat-chips b{font-family:var(--f-disp);font-weight:700;color:var(--ink);font-size:1.02rem}
 @media (max-width:1024px){.stat-chips{margin-inline:auto;justify-content:center}}
+
+/* NGO hero card: compact content card, not a bottom-anchored art panel */
+.phero-art.art-brand{min-height:0;justify-content:flex-start;align-self:center}
