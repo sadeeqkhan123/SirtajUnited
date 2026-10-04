@@ -65,7 +65,7 @@ To add a page:
 ### WhatsApp and email links
 
 - Numbers and email address are constants at the top of `js/app.js` (`WA1`, `EMAIL`). The visible numbers and fallback `href`s in `index.html` must be changed too.
-- WhatsApp is +93 711 66 66 64 (`WA1="93711666664"`). The office phone lines +93 766 22 20 20 and +93 766 28 28 85 are `tel:` links only.
+- WhatsApp is +93 711 66 66 64 (`WA1="93711666664"`). The office phone +93 76 695 0231 is a `tel:` link only.
 - `data-wa="generic|dap|urea|food"` on a link makes `app.js` write a prefilled WhatsApp message in the current language. Add `data-num="2"` to use the second line.
 - `data-mail="generic|rfq|dap|urea|food"` does the same for email links.
 - The floating button in the corner opens a panel with both WhatsApp lines.
@@ -95,12 +95,11 @@ To add a page:
 
 ## Image credits
 
-Product photos in `assets/img/products/` are free-license images from Wikimedia Commons and the WordPress photo directory. The CC BY-SA ones require the attribution line kept in the footer ("Photos: S. Dwivedi, LHcheM (CC BY-SA), U.S. Army").
+The DAP, Urea and granule photos are the company's own product photography. The remaining catalog photos are free-license images credited below (the client asked for no attribution line in the footer; these credits live here).
 
 | File | Source | License |
 |---|---|---|
-| `products/dap.jpg`, `catalog/dap.jpg` | "DAP (Diammonium Phosphate) Granules (1)" by Suyash Dwivedi, Wikimedia Commons | CC BY-SA 4.0 |
-| `products/urea.jpg`, `catalog/urea.jpg` | "Sample of Urea" by LHcheM, Wikimedia Commons | CC BY-SA 3.0 |
+| `products/dap.jpg`, `catalog/dap.jpg`, `products/urea.jpg`, `catalog/urea.jpg`, `products/granules.jpg` | Sartaj United product photography (own) | — |
 | `products/grain.jpg`, `catalog/wheat.jpg` | Wheat grains close-up, WordPress photo directory (pd.w.org) | CC0 |
 | `products/truck.jpg` | "Forward Operation Base Pasab provides fertilizer to Afghans" by Spc. Jason Nolte, U.S. Army, via Wikimedia Commons | Public domain |
 | `catalog/rice.jpg` | "Mushqbudji rice grains close-up" by Zahoor Ahmad Reshi, Wikimedia Commons | CC0 |

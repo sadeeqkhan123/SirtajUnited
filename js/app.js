@@ -1,7 +1,7 @@
 (function(){
 "use strict";
 /* Contact details used for every generated WhatsApp and email link.
-   WhatsApp: +93 711 66 66 64. Phones +93 766 22 20 20 and +93 766 28 28 85 are tel: only.
+   WhatsApp: +93 711 66 66 64. Office phone +93 76 695 0231 is tel: only.
    The visible numbers and fallback hrefs in index.html must be updated too. */
 const WA1="93711666664",EMAIL="info@sartajunited.com";
 const LANGS={en:{tag:"en",dir:"ltr"},fa:{tag:"fa-AF",dir:"rtl"},ps:{tag:"ps-AF",dir:"rtl"}};
