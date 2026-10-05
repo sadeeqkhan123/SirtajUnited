@@ -354,7 +354,8 @@ html[dir="rtl"] .fld input[type="date"]{text-align:right}
 .aside{display:grid;gap:16px}
 
 /* contact */
-.ccard .num{font-size:1.3rem;font-weight:700;margin-top:6px;letter-spacing:-.01em;font-family:var(--f-disp)}
+.ccard .tile{margin-bottom:12px}
+.ccard .num{font-size:1.3rem;font-weight:700;margin-top:4px;letter-spacing:-.01em;font-family:var(--f-disp)}
 .ccard .lbl{font-weight:500;color:var(--ink-3);font-size:.88rem}
 .ccard a.num{text-decoration:none;color:var(--ink);align-self:start}
 .ccard a.num:hover{color:var(--brand)}
